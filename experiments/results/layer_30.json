@@ -1,0 +1,26 @@
+{
+  "layer": 30,
+  "scale": 0.9,
+  "results": [
+    {
+      "id": 1,
+      "category": "coding",
+      "question": "Write a Python function that checks whether a given string is a palindrome. Explain how it works.",
+      "baseline_loss": 0.1785256266593933,
+      "perturbed_loss": 0.1785256266593933,
+      "delta_nll": 0.0,
+      "baseline_answer": "Certainly! A palindrome is a word, phrase, number, or other sequences of characters which reads the same backward as forward, ignoring spaces, punctuation, and capitalization.\n\nHere's a Python function to check if a given string is a palindrome:\n\n```python\ndef is_palindrome(s: str) -> bool:\n    \"\"\"\n    Checks if the input string is a palindrome.\n    \n    Parameters:\n    s (str): The string to check.\n    \n    Returns:\n    bool: True if the string is a palindrome, False otherwise.\n    \"\"\"\n    # Normalize the string by removing non-alphanumeric characters and converting to lowercase\n    normalized_str = ''.join(char.lower() for char in s if char.isalnum())\n    \n    # Check if the normalized string is equal to its reverse\n    return normalized_str == normalized_str[::-1]\n```\n\n### Explanation:\n\n1. **Normalization**:\n   - The function first normalizes the input string `s` by:\n     - Removing all non-alphanumeric characters using a generator expression inside the `join()` method.\n     - Converting all characters to lowercase using a generator expression with `char.lower()`.\n   - This ensures that the function treats \"Able was I saw Elba\" and \"No 'x' in Nixon\"",
+      "perturbed_answer": "Certainly! A palindrome is a word, phrase, number, or other sequences of characters which reads the same backward as forward, ignoring spaces, punctuation, and capitalization.\n\nHere's a Python function to check if a given string is a palindrome:\n\n```python\ndef is_palindrome(s: str) -> bool:\n    \"\"\"\n    Checks if the input string is a palindrome.\n    \n    Parameters:\n    s (str): The string to check.\n    \n    Returns:\n    bool: True if the string is a palindrome, False otherwise.\n    \"\"\"\n    # Normalize the string by removing non-alphanumeric characters and converting to lowercase\n    normalized_str = ''.join(char.lower() for char in s if char.isalnum())\n    \n    # Check if the normalized string is equal to its reverse\n    return normalized_str == normalized_str[::-1]\n```\n\n### Explanation:\n\n1. **Normalization**:\n   - The function first normalizes the input string `s` by:\n     - Removing all non-alphanumeric characters using a generator expression inside the `join()` method.\n     - Converting all characters to lowercase using a generator expression with `char.lower()`.\n   - This ensures that the function treats \"Able was I saw Elba\" and \"No 'x' in Nixon\""
+    },
+    {
+      "id": 2,
+      "category": "math",
+      "question": "A shop gives a 20% discount on a product priced at 1500 rupees. What is the final price? Show the calculation.",
+      "baseline_loss": 0.10941854119300842,
+      "perturbed_loss": 0.10941854119300842,
+      "delta_nll": 0.0,
+      "baseline_answer": "To calculate the final price after applying a 20% discount to a product priced at 1500 rupees, we can follow these steps:\n\n1. **Calculate the discount amount:**\n   - The discount rate is 20%, which can be written as 0.20 in decimal form.\n   - To find the discount amount, multiply the original price by the discount rate:\n     \\[\n     \\text{Discount Amount} = 1500 \\times 0.20 = 300 \\text{ rupees}\n     \\]\n\n2. **Subtract the discount amount from the original price:**\n   - Subtract the discount amount from the original price to get the final price:\n     \\[\n     \\text{Final Price} = 1500 - 300 = 1200 \\text{ rupees}\n     \\]\n\nSo, the final price of the product after a 20% discount is 1200 rupees.",
+      "perturbed_answer": "To calculate the final price after applying a 20% discount to a product priced at 1500 rupees, we can follow these steps:\n\n1. **Calculate the discount amount:**\n   - The discount rate is 20%, which can be written as 0.20 in decimal form.\n   - To find the discount amount, multiply the original price by the discount rate:\n     \\[\n     \\text{Discount Amount} = 1500 \\times 0.20 = 300 \\text{ rupees}\n     \\]\n\n2. **Subtract the discount amount from the original price:**\n   - Subtract the discount amount from the original price to get the final price:\n     \\[\n     \\text{Final Price} = 1500 - 300 = 1200 \\text{ rupees}\n     \\]\n\nSo, the final price of the product after a 20% discount is 1200 rupees."
+    }
+  ]
+}

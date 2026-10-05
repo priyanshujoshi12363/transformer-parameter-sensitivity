@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# AI / ML model files
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.gguf
+*.onnx
+
+# Hugging Face cache
+.cache/
+huggingface/
+transformers_cache/
+
+# Experiment caches / temporary files
+*.tmp
+*.temp
+*.log
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editors
+.vscode/
+.idea/
+
+# Experiment-generated temporary files
+experiments/__pycache__/
+experiments/tmp/
+
+# CUDA / profiling outputs
+*.nsys-rep
+*.qdrep
+*.sqlite
